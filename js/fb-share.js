@@ -1,0 +1,1 @@
+!function(){"use strict";window.addEventListener("load",function n(e){window.removeEventListener("load",n,!1),document.getElementById("shareBtn").onclick=function(){FB.ui({method:"share",display:"popup",href:window.location.href},function(n){})}},!1)}();
