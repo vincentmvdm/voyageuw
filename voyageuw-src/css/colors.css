@@ -1,0 +1,75 @@
+a { color: var(--black); }
+
+header, header a, .page-template header, .page-template header a {
+    color: white;
+}
+
+/* Might want to imrpove this selector in the future. */
+.scroll-lock header a {
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--black);
+}
+
+@media (--lg-up) {
+    .page-template header, .page-template header a {
+        color: var(--black);
+    }
+}
+
+#hero .spread-left {
+    background-color: var(--black);
+}
+
+#hero .spread-left h1 {
+    color: white;
+}
+
+#footer {
+    background-color: var(--black);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-light-blue {
+    background-color: var(--light-blue);
+}
+
+.bg-gray {
+    background-color: var(--gray-bg);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.gray {
+    color: var(--gray-text);
+}
+
+.darker-gray {
+    color: var(--darker-gray);
+}
+
+.black {
+    color: var(--black);
+}
+
+.white {
+    color: var(--white);
+}
+
+hr {
+    border: 0;
+    margin: 0;
+    height: 1px;
+    background-color: var(--gray-bg);
+}
+
+#blog-post a {
+    text-decoration: underline;
+}

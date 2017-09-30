@@ -1,0 +1,108 @@
+section#hero {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#hero { position: relative; }
+
+#hero-image {
+    background-size: cover !important;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#hero ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#hero-slides {
+    width: 100%;
+}
+
+#hero-slides li {
+    background-size: cover !important;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#hero-slides li:not(:first-child) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#hero-pagination {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+#hero-pagination li { display: inline-block; }
+
+.pagination-item {
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
+    opacity: 0.5;
+    width: 8px;
+}
+
+.pagination-item:first-child {
+    opacity: 1;
+}
+
+.scrim {
+    width: 100%;
+}
+
+.scrim h1, .scrim p {
+    color: white;
+}
+
+@media (--xs-down) {
+    #hero-slides {
+        height: var(--hero-xs-down);
+    }
+
+    #hero-alt { height: var(--hero-alt-xs-down); }
+    #hero-pagination { bottom: var(--pag-mb-xs-down); }
+}
+
+@media (--xs) {
+    #hero-slides { height: var(--hero-xs); }
+    #hero-alt { height: var(--hero-alt-xs); }
+    #hero-pagination { bottom: var(--pag-mb-xs); }
+}
+
+@media (--sm) {
+    #hero-slides { height: var(--hero-sm); }
+    #hero-alt { height: var(--hero-alt-sm); }
+    #hero-pagination { bottom: var(--pag-mb-sm); }
+}
+
+@media (--md) {
+    #hero-slides { height: var(--hero-md); }
+    #hero-alt { height: var(--hero-alt-md); }
+    #hero-pagination { bottom: var(--pag-mb-md); }
+}
+
+@media (--lg-up) {
+    #hero-slides { height: var(--hero-lg-up); }
+    #hero-alt { height: var(--hero-alt-lg-up); }
+    #hero-pagination { bottom: var(--pag-mb-lg-up); }
+
+    .page-template #hero-slides {
+        display: none;
+    }
+
+    #hero-alt {
+        margin-top: calc(1.5 * var(--nav-mt-lg-up));
+    }
+}

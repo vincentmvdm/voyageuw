@@ -1,0 +1,194 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width);
+    width: 100%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tc { text-align: center; }
+.tl { text-align: left; }
+
+.h-100 { height: 100%; }
+
+.spread { width: 100%; }
+
+.spread-inner {
+    max-width: calc(var(--max-width) / 2);
+    width: 100%;
+}
+
+.mt0 { margin-top: 0; }
+.mb0 { margin-bottom: 0; }
+
+@media (--xs-down) {
+    .container-inner {
+        padding: 0 calc(var(--margin-xs-down) - calc(var(--gutter-xs-down) / 2));
+    }
+
+    .col-full, .col-one-half, .col-one-third, .col-one-fourth {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .col-full, .col-one-half, .col-one-third, .col-one-fourth {
+        margin: 0 calc(var(--gutter-xs-down) / 2);
+    }
+
+    .spread {
+        padding: 0 var(--margin-xs-down);
+    }
+
+    .social-logo {
+        margin: 0 calc(var(--gutter-xs-down) / 2);
+    }
+
+}
+
+@media (--xs) {
+    .container-inner {
+        padding: 0 calc(var(--margin-xs) - calc(var(--gutter-xs) / 2));
+    }
+
+    .col-full, .col-one-half, .col-one-third, .col-one-fourth {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .col-one-fourth {
+        flex-basis: calc(50% - var(--gutter-xs));
+        max-width: calc(50% - var(--gutter-xs));
+    }
+
+    .col-full, .col-one-half, .col-one-third, .col-one-fourth {
+        margin: 0 calc(var(--gutter-xs) / 2);
+    }
+
+    .spread {
+        padding: 0 var(--margin-xs);
+    }
+
+    .social-logo {
+        margin: 0 calc(var(--gutter-xs) / 4);
+    }
+}
+
+@media (--sm) {
+    .container-inner {
+        padding: 0 calc(var(--margin-sm) - calc(var(--gutter-sm) / 2));
+    }
+
+    .col-full {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .col-one-half, .col-one-third {
+        flex-basis: calc(50% - var(--gutter-sm));
+        max-width: calc(50% - var(--gutter-sm));
+    }
+
+    .col-one-fourth {
+        flex-basis: calc(100% / 3 - var(--gutter-sm));
+        max-width: calc(100% / 3 - var(--gutter-sm));
+    }
+
+    .col-full, .col-one-half, .col-one-third, .col-one-fourth {
+        margin: 0 calc(var(--gutter-sm) / 2);
+    }
+
+    .spread {
+        padding: 0 var(--margin-sm);
+    }
+
+    .social-logo {
+        margin: 0 calc(var(--gutter-sm) / 4);
+    }
+}
+
+@media (--md) {
+    .container-inner {
+        padding: 0 calc(var(--margin-md) - calc(var(--gutter-md) / 2));
+    }
+
+    .col-full {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .col-one-half {
+        flex-basis: calc(50% - var(--gutter-md));
+        max-width: calc(50% - var(--gutter-md));
+    }
+
+    .col-one-third, .col-one-fourth {
+        flex-basis: calc(100% / 3 - var(--gutter-md));
+        max-width: calc(100% / 3 - var(--gutter-md));
+    }
+
+    .col-full, .col-one-half, .col-one-third, .col-one-fourth {
+        margin: 0 calc(var(--gutter-md) / 2);
+    }
+
+    .spread {
+        padding: 0 var(--margin-md);
+    }
+
+    .social-logo {
+        margin: 0 calc(var(--gutter-md) / 4);
+    }
+}
+
+@media (--lg-up) {
+    .container-inner {
+        padding: 0 calc(var(--margin-lg-up) - calc(var(--gutter-lg-up) / 2));
+    }
+
+    .col-full {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .col-one-half {
+        flex-basis: calc(50% - var(--gutter-lg-up));
+        max-width: calc(50% - var(--gutter-lg-up));
+    }
+
+    .col-one-third {
+        flex-basis: calc(100% / 3 - var(--gutter-lg-up));
+        max-width: calc(100% / 3 - var(--gutter-lg-up));
+    }
+
+    .col-two-thirds {
+        flex-basis: calc(100% * calc(2/3) - var(--gutter-md));
+    }
+
+    .col-one-fourth {
+        flex-basis: calc(100% / 4 - var(--gutter-lg-up));
+        max-width: calc(100% / 4 - var(--gutter-lg-up));
+    }
+
+    .spread { width: 50%; }
+
+    .col-full, .col-one-half, .col-one-third, .col-one-fourth {
+        margin: 0 calc(var(--gutter-lg-up) / 2);
+    }
+
+    .spread-left .spread-inner {
+        padding-left: calc(2 * var(--gutter-lg-up));
+        padding-right: calc(2 * var(--gutter-lg-up));
+    }
+
+    .spread-right .spread-inner {
+        padding-left: calc(2 * var(--gutter-lg-up));
+        padding-right: calc(2* var(--gutter-lg-up));
+    }
+
+    .social-logo {
+        margin: 0 calc(var(--gutter-lg-up) / 4);
+    }
+}

@@ -1,0 +1,90 @@
+label {
+    font-weight: 500;
+    display: block;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+input, input[type="file"] {
+    font-family: inherit;
+    font-size: inherit;
+    display: block;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+select {
+    font-family: inherit;
+    font-size: inherit;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input, select, textarea {
+    border-radius: 0;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    max-width: 480px;
+    width: 100%;
+}
+
+
+input[type="submit"] {
+    width: auto;
+}
+
+.g-recaptcha > div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 304px;
+}
+
+.file-wrap {
+    display: flex;
+}
+
+.file-wrap input {
+    margin-top: 0;
+}
+@media (--sm-down) {
+    .home input.btn {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (--sm-up) {
+    #signup-area {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #newsletter input[type="text"] {
+        flex: 1;
+        margin-top: 0;
+    }
+
+    #newsletter input[name="MERGE1"] {
+        border-right: 0;
+    }
+}

@@ -1,0 +1,38 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    max-height: 100%;
+}
+
+.aspect-ratio-16x9, .aspect-ratio-3x2, .aspect-ratio-4x3, .aspect-ratio-1x1, .aspect-ratio-3x4, .aspect-ratio-2x3, .aspect-ratio-2x1 {
+    height: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.aspect-ratio-16x9 { padding-bottom: 56.25%; }
+.aspect-ratio-3x2 { padding-bottom: calc(calc(2/3) * 100%); }
+.aspect-ratio-4x3 { padding-bottom: 75%; }
+.aspect-ratio-1x1 { padding-bottom: 100%; }
+.aspect-ratio-3x4 { padding-bottom: calc(calc(4/3) * 100%); }
+.aspect-ratio-2x3 { padding-bottom: 150%; }
+.aspect-ratio-2x1 { padding-bottom: 50%; }
+.aspect-ratio-4x5 { padding-bottom: 125%; }
+
+.aspect-ratio-16x9 img, .aspect-ratio-3x2 img, .aspect-ratio-4x3 img, .aspect-ratio-1x1 img, .aspect-ratio-3x4 img, .aspect-ratio-2x3 img, .aspect-ratio-2x1 img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.aspect-ratio-2x1.sponsor img {
+    object-fit: contain;
+}

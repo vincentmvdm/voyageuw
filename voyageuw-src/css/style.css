@@ -1,0 +1,163 @@
+@import 'config.css';
+@import 'flexbox.css';
+@import 'hide.css';
+@import 'typography.css';
+@import 'images.css';
+@import 'btn.css';
+@import 'grid.css';
+@import 'forms.css';
+@import 'position.css';
+@import 'margin.css';
+@import 'padding.css';
+@import 'colors.css';
+@import 'wpcf7.css';
+@import 'voyageuw-nav.css';
+@import 'voyageuw-hero.css';
+@import 'hover.css';
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+article:hover h3 {
+    color: rgba( 0, 0, 0, .8 );
+}
+
+article:hover .article-author {
+    color: rgba( 0, 0, 0, .8 );
+}
+
+.card {
+    background-color: white;
+}
+
+.social-logo {
+    height: 24px;
+    width: 24px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.cover {
+    background-size: cover !important;
+}
+
+.page-template form {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ins {
+    text-decoration: none;
+}
+
+.footer-logo:hover {
+    cursor: pointer;
+}
+
+#addFileInput:hover {
+    cursor: pointer;
+}
+
+.file-wrap {
+    margin-top: 1.5rem;
+}
+
+#footer {
+    transition: background-color .15s ease-in-out;
+}
+
+#packet-wrapper {
+    position: relative;
+    transition: background-color .15s ease-in-out;
+}
+
+#packet-wrapper img { vertical-align: bottom; }
+#packet-wrapper:hover #packet-overlay {
+    display: block;
+    cursor: pointer;
+}
+
+#packet-overlay {
+    background-color: rgba(0,0,0,0.25);
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.single-post blockquote {
+    font-family: var(--serif);
+    font-size: var(--f3);
+}
+
+footer p {
+    color: white;
+}
+
+footer .fa {
+    color: white;
+}
+
+.scrim {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.bg-#FF4848 {
+    background-color: #FF4848;
+}
+
+.bg-#FF4848-2 {
+    background-color: #80FFFF;
+}
+
+footer img:hover {
+    transform: scale(1.15);
+    transition: transform 0.25s ease-in;
+}
+
+.circle {
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px var(--black);
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+}
+
+.circle .fa {
+    color: var(--black);
+}
+
+
+#voyageuw-spinner {
+    display: none;
+}
+
+#shareBtn:hover {
+    cursor: pointer;
+}
+
+.max-width-single {
+    max-width: 960px;
+}
+
+.home hr:last-child {
+    display: none;
+}
+
+footer .fa {
+    font-size: 24px;
+}
+
+.tl {
+    text-align: left;
+}

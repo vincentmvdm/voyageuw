@@ -1,0 +1,131 @@
+.dim {
+    opacity: 1;
+    transition: opacity .15s ease-in;
+}
+
+.dim:hover, .dim:focus {
+    opacity: .5;
+    transition: opacity .15s ease-in;
+}
+
+.dim:active {
+    opacity: .8;
+    transition: opacity .15s ease-out;
+}
+
+.black {
+    color: #000;
+}
+
+.hover-white:hover {
+    color: #fff;
+}
+
+.hover-white:focus {
+    color: #fff;
+}
+
+.hover-gray:hover {
+    color: var(--gray-text);
+}
+
+.hover-gray:focus {
+    color: var(--gray-text);
+}
+
+.hover-black:hover {
+    color: #000;
+}
+
+.hover-black:focus {
+    color: #000;
+}
+
+.hover-blue:hover {
+    color: var(--blue);
+}
+
+.hover-blue:focus {
+    color: var(--blue);
+}
+
+.hover-bg-black:hover {
+    background-color: #000;
+}
+
+.hover-bg-black:focus {
+    background-color: #000;
+}
+
+.hover-bg-white:hover {
+    background-color: #fff;
+}
+
+.hover-bg-blue:focus {
+    background-color: var(--blue);
+}
+
+.hover-bg-blue:hover {
+    background-color: var(--blue);
+}
+
+.hover-bg-white:focus {
+    background-color: #fff;
+}
+
+.hover-bg-gray:hover {
+    background-color: var(--gray-bg);
+}
+
+.hover-bg-gray:focus {
+    background-color: var(--gray-bg);
+}
+
+
+.bg-animate, .bg-animate:hover, .bg-animate:focus {
+    transition: background-color .15s ease-in-out;
+}
+
+.article img {
+    transition: transform .45s ease;
+}
+
+.article:hover img, .article:focus img, .article:active img {
+    transform: scale(1.05);
+}
+
+.no-spotlight:hover {
+    cursor: pointer;
+}
+
+.no-spotlight {
+    opacity: 1;
+    transition: opacity .15s ease-in;
+}
+
+.link {
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+
+.link:link, .link:visited {
+    transition: color .15s ease-in;
+}
+
+.link:hover {
+    transition: color .15s ease-in;
+}
+
+.link:active {
+    transition: color .15s ease-in;
+}
+
+.link:focus {
+    transition: color .15s ease-in;
+    outline: 1px dotted currentColor;
+}
+
+#instagram-feed:hover .no-spotlight:not(:hover) {
+    opacity: 0.5;
+    transition: opacity .15s ease-in;
+}
