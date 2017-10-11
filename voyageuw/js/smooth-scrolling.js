@@ -1,1 +1,0 @@
-jQuery(document).ready(function(){jQuery("a").on("click",function(o){if(""!==this.hash){o.preventDefault();var t=this.hash;jQuery("html, body").animate({scrollTop:jQuery(t).offset().top},500,function(){window.location.hash=t})}})});
