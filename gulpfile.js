@@ -38,7 +38,7 @@ gulp.task('vendor', function() {
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-        proxy: "localhost:8888"
+        proxy: "localhost:8000"
     });
 });
 
