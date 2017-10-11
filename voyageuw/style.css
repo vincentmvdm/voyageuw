@@ -1818,19 +1818,16 @@ section#hero {
 
 .dim {
     opacity: 1;
-    -webkit-transition: opacity .15s ease-in;
     transition: opacity .15s ease-in;
 }
 
 .dim:hover, .dim:focus {
     opacity: .5;
-    -webkit-transition: opacity .15s ease-in;
     transition: opacity .15s ease-in;
 }
 
 .dim:active {
     opacity: .8;
-    -webkit-transition: opacity .15s ease-out;
     transition: opacity .15s ease-out;
 }
 
@@ -1903,12 +1900,10 @@ section#hero {
 }
 
 .bg-animate, .bg-animate:hover, .bg-animate:focus {
-    -webkit-transition: background-color .15s ease-in-out;
     transition: background-color .15s ease-in-out;
 }
 
 .article img {
-    -webkit-transition: -webkit-transform .45s ease;
     transition: -webkit-transform .45s ease;
     transition: transform .45s ease;
     transition: transform .45s ease, -webkit-transform .45s ease;
@@ -1925,40 +1920,33 @@ section#hero {
 
 .no-spotlight {
     opacity: 1;
-    -webkit-transition: opacity .15s ease-in;
     transition: opacity .15s ease-in;
 }
 
 .link {
     text-decoration: none;
-    -webkit-transition: color .15s ease-in;
     transition: color .15s ease-in;
 }
 
 .link:link, .link:visited {
-    -webkit-transition: color .15s ease-in;
     transition: color .15s ease-in;
 }
 
 .link:hover {
-    -webkit-transition: color .15s ease-in;
     transition: color .15s ease-in;
 }
 
 .link:active {
-    -webkit-transition: color .15s ease-in;
     transition: color .15s ease-in;
 }
 
 .link:focus {
-    -webkit-transition: color .15s ease-in;
     transition: color .15s ease-in;
     outline: 1px dotted currentColor;
 }
 
 #instagram-feed:hover .no-spotlight:not(:hover) {
     opacity: 0.5;
-    -webkit-transition: opacity .15s ease-in;
     transition: opacity .15s ease-in;
 }
 
@@ -2018,13 +2006,11 @@ ins {
 }
 
 #footer {
-    -webkit-transition: background-color .15s ease-in-out;
     transition: background-color .15s ease-in-out;
 }
 
 #packet-wrapper {
     position: relative;
-    -webkit-transition: background-color .15s ease-in-out;
     transition: background-color .15s ease-in-out;
 }
 
@@ -2073,7 +2059,6 @@ footer .fa {
 footer img:hover {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
-    -webkit-transition: -webkit-transform 0.25s ease-in;
     transition: -webkit-transform 0.25s ease-in;
     transition: transform 0.25s ease-in;
     transition: transform 0.25s ease-in, -webkit-transform 0.25s ease-in;
